@@ -13,15 +13,15 @@
   <url>
     <loc>https://macrosun-good.github.io/pet-blog/contact.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://macrosun-good.github.io/pet-blog/contact.html</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://macrosun-good.github.io/pet-blog/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/disclaimer.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -47,6 +47,56 @@
   </url>
   <url>
     <loc>https://macrosun-good.github.io/pet-blog/articles/benefits-adopting-senior-pet.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/rabbit-care-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/fish-keeping-first-aquarium.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/introduce-new-pet-to-existing-pet.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/toxic-plants-pets.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/pet-grooming-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/cat-body-language.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/pet-proof-your-home.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/low-maintenance-pets-busy-people.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/traveling-with-pets.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://macrosun-good.github.io/pet-blog/articles/recognize-pain-in-your-pet.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
