@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://macrosun-good.github.io/pet-blog/sitemap.xml
