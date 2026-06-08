@@ -268,21 +268,137 @@
             </div>
         </article>
 
-        <!-- Article 15: Recognize Pain -->
+        <!-- Article 16: Happy Indoor Cat -->
         <article class="article-card">
             <div class="card-image">
-                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&q=80" alt="Dog eating" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?w=600&q=80" alt="Cat playing" loading="lazy">
+                <span class="card-category">Cats</span>
+            </div>
+            <div class="card-body">
+                <h3><a href="articles/happy-indoor-cat.html">How to Keep Your Indoor Cat Happy and Stimulated</a></h3>
+                <p>Real tips from a cat owner on enrichment, play, and creating a space your cat will love.</p>
+                <div class="card-meta"><span>📅 Jun 2, 2026</span><span>📖 8 min read</span></div>
+            </div>
+        </article>
+
+        <!-- Article 17: Pet Allergies -->
+        <article class="article-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=600&q=80" alt="Cat" loading="lazy">
                 <span class="card-category">Health</span>
             </div>
             <div class="card-body">
-                <h3><a href="articles/recognize-pain-in-your-pet.html">How to Recognize Pain in Your Pet</a></h3>
-                <p>Learn the subtle behavioral and physical signs that your pet may be suffering.</p>
-                <div class="card-meta"><span>📅 Jun 2, 2026</span><span>📖 5 min read</span></div>
+                <h3><a href="articles/pet-allergies.html">Pet Allergies: What Every Owner Should Know</a></h3>
+                <p>An honest guide to understanding allergies in dogs and cats — symptoms, treatments, and real-world advice.</p>
+                <div class="card-meta"><span>📅 Jun 2, 2026</span><span>📖 8 min read</span></div>
+            </div>
+        </article>
+
+        <!-- Article 18: Dog Training -->
+        <article class="article-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?w=600&q=80" alt="Dog training" loading="lazy">
+                <span class="card-category">Training</span>
+            </div>
+            <div class="card-body">
+                <h3><a href="articles/dog-training-positive-reinforcement.html">Dog Training with Positive Reinforcement</a></h3>
+                <p>Why reward-based training works better than punishment, and how to start with your own dog.</p>
+                <div class="card-meta"><span>📅 Jun 2, 2026</span><span>📖 8 min read</span></div>
+            </div>
+        </article>
+
+        <!-- Article 19: Pet Insurance -->
+        <article class="article-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600&q=80" alt="Person with dog" loading="lazy">
+                <span class="card-category">Finance</span>
+            </div>
+            <div class="card-body">
+                <h3><a href="articles/pet-insurance-guide.html">Pet Insurance: Is It Worth the Cost?</a></h3>
+                <p>A honest, no-nonsense look at pet insurance — what it covers, what it costs, and if you really need it.</p>
+                <div class="card-meta"><span>📅 Jun 2, 2026</span><span>📖 8 min read</span></div>
+            </div>
+        </article>
+
+        <!-- Article 20: Growing Up with Pets -->
+        <article class="article-card">
+            <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80" alt="Child with dog" loading="lazy">
+                <span class="card-category">Family</span>
+            </div>
+            <div class="card-body">
+                <h3><a href="articles/growing-up-with-pets.html">The Emotional Benefits of Growing Up with Pets</a></h3>
+                <p>A personal reflection on how pets shape children's empathy, emotional intelligence, and mental health.</p>
+                <div class="card-meta"><span>📅 Jun 2, 2026</span><span>📖 8 min read</span></div>
             </div>
         </article>
 
     </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination">
+        <a href="#" class="active" data-page="1">1</a>
+        <a href="#" data-page="2">2</a>
+    </div>
+
 </section>
+
+<style>
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0 0;
+}
+.pagination a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  color: #4a5568;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.pagination a:hover,
+.pagination a.active {
+  background: #2d6a4f;
+  color: #fff;
+  border-color: #2d6a4f;
+}
+</style>
+
+<script>
+(function() {
+  var cards = document.querySelectorAll('.article-grid > .article-card');
+  var perPage = 15;
+  var paginationLinks = document.querySelectorAll('#pagination a');
+
+  function showPage(page) {
+    var start = (page - 1) * perPage;
+    var end = start + perPage;
+    cards.forEach(function(card, i) {
+      card.style.display = (i >= start && i < end) ? '' : 'none';
+    });
+    paginationLinks.forEach(function(link) {
+      link.classList.toggle('active', parseInt(link.dataset.page) === page);
+    });
+  }
+
+  paginationLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      showPage(parseInt(this.dataset.page));
+    });
+  });
+
+  showPage(1);
+})();
+</script>
 
 <!-- ===== Newsletter ===== -->
 <section class="newsletter-section">
